@@ -9,11 +9,11 @@ public class User implements Entity{
 	private String firstName;
 	private String lastName;
 	private String nationalityId;
-	private Date dateOfBirth;
+	private int dateOfBirth;
 	private String email;
 	private String password;
 	public User() {}
-	public User(String nationalityId,String firstName, String lastName, Date dateOfBirth) {
+	public User(String nationalityId,String firstName, String lastName, int dateOfBirth) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -44,10 +44,10 @@ public class User implements Entity{
 	public void setNationalityId(String nationalityId) {
 		this.nationalityId = nationalityId;
 	}
-	public Date getDateOfBirth() {
+	public int getDateOfBirth() {
 		return dateOfBirth;
 	}
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(int dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 	public String getEmail() {

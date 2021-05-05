@@ -19,7 +19,7 @@ public class Main {
 		GameManager gameManager=new GameManager();
 		CampaignManager campaignManager=new CampaignManager();
 		AuthManager authManager=new AuthManager(new MernisVerifyAdapter(),new UserManager());
-		User berket=new User("Yunus","Yanık","1222346487",new Date(21,9,1993));
+		User berket=new User("123456789", "Berket Göktürk", "Yanık", 2003);
 		
 		Game minecraft=new Game("Minecraft",140);
 		Game forHonor=new Game("For Honor",100);

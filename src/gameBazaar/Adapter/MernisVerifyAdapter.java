@@ -15,7 +15,7 @@ public class MernisVerifyAdapter implements UserVerifyService {
 		boolean result=false;
 		try {
 			
-			result=client.TCKimlikNoDogrula(Long.parseLong(user.getNationalityId()), user.getFirstName(), user.getLastName(), user.getDateOfBirth().getYear());
+			result=client.TCKimlikNoDogrula(Long.parseLong(user.getNationalityId()),user.getFirstName(),user.getLastName(), user.getDateOfBirth());
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
